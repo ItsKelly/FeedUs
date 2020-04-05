@@ -1,0 +1,56 @@
+.order{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    font-size: 30px;
+}
+h1{
+    position: absolute;
+    top: 15%;
+    right: 45%;
+}
+ol{
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    font-size: x-large;
+}
+.thank{
+    font-size: 400%;
+    letter-spacing: 1px;
+    color: #d1171c ;
+    position: absolute;
+    top:70%;
+    right:30%;
+}
+#end{
+    position: absolute;
+    top: 60%;
+    right: 25%;
+    font-size: x-large;
+}
+
+
+.payButton{
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: black solid 2px;
+    padding: 15px 2px 2px 2px;
+    text-align: center;
+    color: black;
+    background: #e6e5ff;
+    width: 10%;
+    height: 50px;
+    transition-duration: 0.4s;
+    position: absolute;
+    bottom: 5%;
+    right:5%;
+
+}
+.payButton:hover{
+    cursor: pointer;
+    font-size: 15px;
+}

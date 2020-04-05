@@ -1,0 +1,87 @@
+body{
+    background-image: url("../images/main11.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Times New Roman", Times, serif;
+    direction: rtl;
+}
+
+.gamebuttons{
+    font-size:150%;
+    margin: 1% 27% 0 0;
+    background-image: linear-gradient(red, #d1171c);
+    outline: none;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    cursor: pointer;
+    padding: 5px 25px;
+}
+
+
+#startbut{
+    text-align: right;
+    display: block;
+    margin-top: 5%;
+    border-radius: 100%;
+    padding: 60px 55px;
+    font-size: 50px;
+}
+
+#startbutafter{
+    display: none;
+}
+
+#endGame{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: black solid 2px;
+    padding: 10px 20px;
+    color: black;
+    background: #e6e5ff;
+}
+
+.game{
+ margin: 0 25% 0 0;
+}
+
+#htitle{
+    color: #d1171c;
+    font-size: 300%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 7%;
+}
+
+
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #ffcb67;
+    margin: 0% 31% 0 0;
+    border-radius: 6px;
+}
+
+#gamebut{
+    display: none;
+}
+
+
+#gamebutafter{
+    display:block;
+    box-shadow: 0 8px #888;
+    width: 10%;
+}
+
+
+#gamebutafter:active{
+    background-image: linear-gradient( #d1171c,rgba(200,1,0,0.84));
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.userscore, #submitscore{
+    display:none;
+}

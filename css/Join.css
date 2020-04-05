@@ -1,0 +1,53 @@
+.content{
+    position: relative;
+    display: inline-block;
+    right:22%;
+    top:100px;
+    direction: rtl;
+
+}
+
+li{
+    list-style: none;
+}
+
+li:before{
+    content: "\1F374";
+    color: black;
+}
+#phone , #userName{
+    border-radius: 5px;
+
+}
+
+#restphoto{
+    position: absolute;
+    display: inline;
+    margin: 9% 35% 0 0;
+    /*background-color: #d1171c ;*/
+    width:300px;
+    height: auto;
+    text-align: center;
+}
+
+#NewCustomer{
+    font-size:90%;
+    margin: 1% 20% 0 0;
+    width: 50%;
+    outline: none;
+    border-radius: 5px;
+    background-image: linear-gradient(red, #d1171c);
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 0 2px #888;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition-duration: 0.4s;
+}
+
+#NewCustomer:hover{
+
+    font-size: 100%;
+    width: 55%;
+    margin-right: 18%;
+}

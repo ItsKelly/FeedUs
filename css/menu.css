@@ -1,0 +1,461 @@
+#menuContainer{
+    margin:7% auto 0 auto;
+    width: 70%;
+    height: 420px;
+    border: black solid 2px;
+    border-radius:20px;
+}
+
+
+
+/* -----------------צד ימין -------------------*/
+
+
+
+#rightSideBar{
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    float: right;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#foodCategoriesHeadline{
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: black solid 2px;
+    padding: 5% 5%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center
+}
+#foodCategoriesContainer{
+    box-sizing: border-box;
+    height: 90%;
+    width: 100%;
+    float: right;
+    overflow: auto;
+    border-bottom-right-radius: 20px;
+}
+#foodCategoriesContainer::-webkit-scrollbar {
+    display: none;
+}
+.foodCategory{
+    box-sizing: border-box;
+    height: 12%;
+    width: 100%;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 7%;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border-bottom: black solid 2px;
+
+}
+.foodCategory:hover{
+    padding: 5%;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
+/* -----------------אמצע -------------------*/
+
+
+
+
+#foodMenuContainer {
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+    float: right;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+
+
+}
+#foodMenuHeadline{
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: black solid 2px;
+    padding: 2% 0%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#foodMenu{
+    height: 90%;
+    overflow: auto;
+    text-align: right;
+    scroll-behavior: smooth;
+}
+#foodMenu::-webkit-scrollbar {
+    display: none;
+}
+.menuCategory{
+    margin: 2% auto;
+    width: 95%;
+    border: black solid 2px;
+}
+.menuCategoryHeadline{
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: black solid 1px;
+    border-top:2px solid black ;
+    padding: 2% 2%;
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menuCategoryComment{
+    box-sizing: border-box;
+    height: 5%;
+    width: 100%;
+    border-bottom: black solid 1px;
+    padding: 1% 1%;
+    font-size: 10px;
+}
+.menuCategoryItems{
+    margin: 2%;
+}
+.menuItem{
+    margin: 0.5%;
+    padding: 1% 3%;
+    box-sizing: border-box;
+    width: 90%;
+    min-height:30px;
+    border: none;
+    border-bottom: black dashed 1px;
+    background: none;
+    font-size: 15px;
+    outline: none;
+    transition-duration: 0.4s;
+}
+.menuItem:hover{
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+}
+.menuItem:focus {
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.buttonAddItem{
+    background: none;
+    float: left;
+    outline: none;
+    border: none;
+    margin-top: 1%;
+}
+.buttonAddItem img{
+    width: 20px;
+    height: 20px;
+}
+.buttonAddItem:hover{
+    cursor: pointer;
+}
+.menuItemName{
+    text-align: right;
+    float: right;
+}
+.menuItemPrice{
+    text-align: left;
+    float: left;
+}
+
+/* -------מודל מוצר -------*/
+
+.menuItemModel{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 7% auto;
+    width: 25%;
+    height: 60%;
+    cursor: default;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/woodBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border:5px groove rgba(191,0,6,0.86) ;
+    overflow: hidden;
+    cursor: default;
+    border-radius:20px;
+    box-shadow: 0 0 200px 50px rgba(0,0,0,0.51);
+
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    height: 100%;
+    width: 100%;
+}
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+#menuItemModelImage2{
+    height: 80%;
+    margin-top: 10%;
+}
+.flip-card-front::-webkit-scrollbar ,.flip-card-back::-webkit-scrollbar{
+    display: none;
+}
+.flip-card-back form{
+    height: 100%;
+    width: 100%;
+}
+#menuItemModelHeadlineContainer{
+    width: 100%;
+    height: 10%;
+}
+#menuItemModelHeadline{
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+    width: 90%;
+    padding-right: 10%;
+    margin-top: 4%;
+    font-weight: bold;
+}
+#menuItemModelClose{
+    float: left;
+    margin: 2% 0 0 3%;
+    font-size: 28px;
+    font-weight: bold;
+}
+#menuItemModelClose:hover{
+    cursor: pointer;
+}
+#menuItemModelSubContainer{
+    height: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5% 5%;
+}
+#menuItemModelImageContainer{
+    width: 100%;
+    height: 60%;
+}
+#menuItemModelImageContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    z-index: 2;
+}
+#menuItemModelImage{
+    margin:0 auto;
+    display: block;
+    height: 100%;
+    text-align: center;
+    opacity: 0.3;
+}
+
+#menuItemModelCommentContainer{
+    float: right;
+    margin-top:3% ;
+    box-sizing: border-box;
+    width: 50%;
+    height: 20%;
+    padding-right:5%;
+}
+#menuItemModelSummeryContainer{
+    float: right;
+    margin-top:3% ;
+    box-sizing: border-box;
+    width: 50%;
+    height: 20%;
+    padding-left:5%;
+}
+#SummeryAmount{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+
+}
+#addItem{
+    margin-top: 2%;
+    box-sizing: border-box;
+    width: 40%;
+    height: 40%;
+    float: left;
+    color: white;
+    background: #00a200;
+    border-radius:20px;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+    outline: 0;
+    transition-duration: 0.4s;
+    border: black solid 2px;
+}
+#addItem:hover{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* -----------------צד שמאל -------------------*/
+
+
+#leftSideBar{
+    box-sizing: border-box;
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+#shoppingCartHeadline {
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: black solid 2px;
+    padding: 5% 5%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#shoppingCart{
+    box-sizing: border-box;
+    height: 65%;
+    width: 100%;
+    float: right;
+    border-bottom: black solid 2px;
+    overflow: auto;
+}
+#shoppingCart::-webkit-scrollbar {
+    display: none;
+}
+.orderdItem{
+    box-sizing: border-box;
+    min-height: 20%;
+    width: 100%;
+    border-bottom: black solid 2px;
+    overflow: auto;
+    transition-duration: 0.6s;
+}
+.orderdItem:hover{
+    background: rgba(255,255,255,0.5)
+}
+.orderdItemName{
+    font-size: 20px;
+    margin: 3px;
+    float: right;
+    width: 70%;
+}
+.orderdItemPrice{
+    font-size: 15px;
+    text-align: left;
+    float: left;
+    margin-left: 3px;
+    width: 25%;
+    position: relative;
+    bottom: -5px;
+}
+.orderdItemCancel{
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    background: none;
+    border: none;
+}
+.orderdItemCancel:hover {
+    cursor: pointer;
+}
+.orderdItemCancel:focus{
+    outline: 0;
+}
+
+.orderdItemComment{
+    font-size: 13px;
+    text-align: right;
+    float: right;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    width: 70%;
+}
+#costSummeryContainer{
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    float: right;
+    border-bottom: black solid 2px;
+    padding: 5% 15%;
+    font-size: 20px;
+}
+#cost{
+    text-align: RIGHT;
+    width: 50%;
+    float: RIGHT;
+}
+#costSummery{
+    text-align: LEFT;
+    width: 50%;
+    float: RIGHT;
+}
+#orderButton{
+    box-sizing: border-box;
+    height: 15%;
+    width: 100%;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #00a200;
+    border-radius:0 0 0 20px;
+    padding: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    opacity: 80%;
+    outline: none;
+    border: none;
+}
+#orderButton:hover{
+    padding: 7%;
+    font-size: 30px;
+cursor: pointer;
+}

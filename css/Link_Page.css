@@ -1,0 +1,70 @@
+body{
+    background-image: url("../images/main11.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "Times New Roman", Times, serif;
+    direction: rtl;
+}
+
+.headtitle{
+    margin: 9% 30% 0 0;
+}
+
+
+.htitle{
+    font-size: 400%;
+    letter-spacing: 1px;
+    color: #d1171c ;
+
+}
+
+
+.main{
+    margin: 7% 30% 0 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0.5% 0.1% 0.1% 0.5%;
+    width: 40%;
+}
+
+
+#linktitle{
+    margin-right:3% ;
+    letter-spacing: 1px;
+    font-size: 125%;
+}
+
+
+input[type=text]:focus{
+    background-color: #e6e5ff;
+}
+
+
+.linkbox{
+    width: 90%;
+    margin-right: 3%;
+    border-radius: 5px;
+}
+
+
+.subutton{
+    display: inline;
+    margin-right: 5%;
+    border: none;
+}
+
+
+#copylink{
+    background-image: url('../images/chain_icon.png');
+    padding:1% 0 0 1% ;
+    height: 45px;
+    width: 45px;
+    margin-right: 38%;
+    margin-top: 0;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+

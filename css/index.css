@@ -1,0 +1,104 @@
+#main {
+    text-align: center;
+    width: 78vw;
+    height: 78vh;
+    margin: 15vh auto 0 auto;
+    padding: 3vh 3vw;
+    box-sizing: border-box;
+
+}
+
+#title {
+    font-size: 8vh;
+    max-height: 130px;
+    font-weight: bold;
+    margin: 5vh 0;
+    overflow: hidden;
+
+}
+
+#subtitle {
+    font-size: 4vh;
+    margin-bottom: 8vw;
+}
+#buttonContainer{
+    height: 0;
+}
+#GetStartedButton {
+    font-size: 3vh;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: black solid 0.4vh;
+    border-radius: 2vh;
+    padding: 1.5vh 2.5vw;
+    color: rgba(26, 5, 2, 0.95);
+    background: rgba(255, 1, 0, 0.84);
+    transition-duration: 0.4s;
+}
+
+#GetStartedButton:hover {
+    color: rgba(191, 0, 6, 0.86);
+    background: white;
+    font-size: 4vh;
+    margin-top: 0;
+
+}
+
+#catchfrase {
+    font-size: 5vh;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 15vh;
+}
+
+#catchouther {
+    margin-top: 0;
+    font-size: 3vh;
+}
+
+
+/*
+@media only screen and (max-width: 600px) {
+
+    #title {
+        font-size: 6vh;
+        max-height: 60px;
+        color:white;
+        padding-bottom: 8vh;
+    }
+
+    #subtitle {
+        color:white;
+        font-size: 3vh;
+        margin-bottom: 40%;
+    }
+
+    #GetStartedButton {
+        border-radius: 50%;
+        padding:30% 0;
+        width: 10%;
+        height: 20%;
+        font-size: 25px;
+        border: white solid 3px;
+        box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.35);
+
+    }
+
+
+    #catchfrase {
+        color:white;
+        font-size: 5vh;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 40%;
+    }
+
+    #catchauther {
+        color:white;
+        margin-top: 0;
+        font-size: 3vh;
+    }
+
+}
+*/

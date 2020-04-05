@@ -1,0 +1,19 @@
+.payButton{
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: black solid 2px;
+    padding: 10px 20px;
+    color: black;
+    background: #e6e5ff;
+    width: 20%;
+    height: 70px;
+    transition-duration: 0.4s;
+    margin: 20% 40% 0 0;
+}
+.payButton:hover{
+    cursor: pointer;
+    font-size: 15px;
+}

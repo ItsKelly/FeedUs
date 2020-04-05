@@ -1,0 +1,149 @@
+.incharge {
+
+    position: absolute;
+    top:25%;
+    right: 25%;
+    font-size: xx-large;
+}
+#viewOrder{
+    position: absolute;
+    top: 60%;
+    right: 35%;
+}
+#viewOrder:hover{
+    cursor: pointer;
+}
+
+#orderInfo{
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    font-size: x-large;
+}
+
+
+
+.menuItemModel{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+#menuItemModelContent{
+    background-image: url("../images/woodBackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 7% auto;
+    border:5px groove rgba(191,0,6,0.86) ;
+    width: 25%;
+    height: 60%;
+    overflow: hidden;
+    cursor: default;
+    border-radius:20px;
+    box-shadow: 0 0 200px 50px rgba(0,0,0,0.51);
+}
+#menuItemModelContent::-webkit-scrollbar {
+    display: none;
+}
+#menuItemModelHeadlineContainer{
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+}
+#menuItemModelHeadline{
+    box-sizing: border-box;
+    float: right;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+    width: 90%;
+    padding-right: 10%;
+    margin-top: 4%;
+    font-weight: bold;
+}
+#menuItemModelClose{
+    float: left;
+    margin: 2% 0 0 3%;
+    font-size: 28px;
+    font-weight: bold;
+}
+#menuItemModelClose:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+#menuItemModelCustomerContainer{
+    box-sizing: border-box;
+    height: 85%;
+    overflow: auto;
+    text-align: right;
+    scroll-behavior: smooth;
+}
+#menuItemModelCustomerContainer::-webkit-scrollbar {
+    display: none;
+}
+.menuItemModelCustomerInfo{
+    margin: 2% auto;
+    width: 95%;
+    border: black solid 2px;
+}
+.menuItemModelCustomerName{
+    box-sizing: border-box;
+    height: 10%;
+    width: 100%;
+    border-bottom: black solid 1px;
+    border-top:2px solid black ;
+    padding: 2% 2%;
+    margin-top: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menuItemModelCustomerCartContainer{
+    margin: 2%;
+}
+.menuItemModelCustomerCart{
+    margin: 0.5%;
+    padding: 1% 3%;
+    box-sizing: border-box;
+    width: 90%;
+    min-height:30px;
+    border: none;
+    border-bottom: black dashed 1px;
+    background: none;
+    font-size: 15px;
+    outline: none;
+    transition-duration: 0.4s;
+}
+
+
+
+.menuItemModelCustomerPay{
+    text-align: center;
+padding: 5px;
+}
+.menuItemModelCustomerTotalPay{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: solid black 2px;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+
+#exportExcel{
+position: absolute;
+    top: 68%;
+    right: 50%;
+}
