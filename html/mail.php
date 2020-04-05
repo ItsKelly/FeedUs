@@ -28,7 +28,7 @@ If (isset($_POST['mail'])) {
     if (!$mail->send()) {
         echo "mail not sent";
     } else {
-        echo "mail sent";
+        echo "mail sent"; // for commiting
     }
 }
 ?>
